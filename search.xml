@@ -9,22 +9,15 @@
 <p>##一、了解下GitHub和Hexo</p>
 <ul>
 <li>gitHub是一个面向开源及私有软件项目的托管平台（男性最大交友平台 ^-^）<br><a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li>
-<li><p>Hexo是快速，简单且高效的博客框架<br><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="external">https://hexo.io/zh-cn/index.html</a></p>
-<p><strong>个人博客：<a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a></strong></p>
-</li>
+<li>Hexo是快速，简单且高效的博客框架<br><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="external">https://hexo.io/zh-cn/index.html</a><br><strong>个人博客：<a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a></strong></li>
 </ul>
 <p>##二、搭建所需</p>
 <ul>
-<li><p>注册一个gitHub账号</p>
-</li>
-<li><p>安装<a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew</a><br>使用它可以安装Mac没有预装但你会需要的东西      </p>
-</li>
-<li><p>下载安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></p>
-</li>
-<li><p>npm<br>第三步中我们安装的node.js中已经包含了npm</p>
-</li>
-<li><p>检验node和npm是否安装成功<br>  进入到终端输入指令：<code>node -v</code>    <code>npm -v</code></p>
-</li>
+<li>注册一个gitHub账号</li>
+<li>安装<a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew</a><br>使用它可以安装Mac没有预装但你会需要的东西      </li>
+<li>下载安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></li>
+<li>npm<br>第三步中我们安装的node.js中已经包含了npm</li>
+<li>检验node和npm是否安装成功<br>  进入到终端输入指令：<code>node -v</code>    <code>npm -v</code></li>
 </ul>
 <p>##三、安装搭建Hexo</p>
 <p>###安装</p>
@@ -45,9 +38,19 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install   </div><div class="line">```    </div><div class="line">* 执行以下命令来开启服务器</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>hexo server<br>```   </p>
+<p>hexo server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">* 开启后访问</div><div class="line">http://localhost:4000/</div><div class="line"></div><div class="line">##四、与GitHub相关联，相当于托管到GitHub上</div><div class="line"></div><div class="line">* 创建一个新的仓库</div><div class="line">* 给仓库命名，Lazy可以替换成任意的，后面为固定写法3.进入到这个仓库，复制这个链接</div><div class="line">* 打开blog文件夹，进入到_config.yml文件夹下，可以用sublime打开或者其他工具</div><div class="line">* 更改添加以下内容（注意此处要在冒号的后面加上空格）</div><div class="line">* 在blog目录下执行命令  </div><div class="line">``` </div><div class="line">//生成静文件</div><div class="line">hexo generate    </div><div class="line">//部署网站</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 <ul>
-<li>开启后访问<br><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></li>
+<li>访问这个链接看到自己博客的界面就表示成功啦！    <a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a>    （记得要换成自己对应的名字）</li>
+</ul>
+<p>##五、常用命令（更多的命令可以去Hexo官网翻阅文档，很详细）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"> //清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</div><div class="line">hexo clean    </div><div class="line">//生成静态文件</div><div class="line">hexo generate</div><div class="line">//部署网站</div><div class="line">hexo deploy</div><div class="line">//新建文章</div><div class="line">hexo new &quot;文章名&quot;  </div><div class="line">//查看帮助</div><div class="line">hexo help </div><div class="line">//查看Hexo的版本</div><div class="line">hexo version</div></pre></td></tr></table></figure></p>
+<p>##六、主题更换</p>
+<ul>
+<li>参考链接：<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a> </li>
+<li>其实就是拿到你喜欢主题的链接，然后到blog目录下执行命令 git clone 链接</li>
+<li>下载成功的主题拖到themes文件夹里</li>
+<li>来到_config.yml中更改想用主题的名字（在themes中选择填写）</li>
+<li>改完后别忘了从新部署，以下三个命令： <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean   </div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+</li>
 </ul>
 ]]></content>
       

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-30T04:30:58.000Z</updated>
+  <updated>2017-12-05T09:25:45.909Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,44 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>haha</title>
-    <link href="http://yoursite.com/2017/10/30/haha/"/>
-    <id>http://yoursite.com/2017/10/30/haha/</id>
-    <published>2017-10-30T04:04:38.000Z</published>
-    <updated>2017-10-30T04:30:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>#使用GitHub + Hexo来搭建个人博客(for Mac)</p><p>##一、了解下GitHub和Hexo</p><ul><li>gitHub是一个面向开源及私有软件项目的托管平台（男性最大交友平台 ^-^）<br><a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li><li>Hexo是快速，简单且高效的博客框架<br><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="external">https://hexo.io/zh-cn/index.html</a><br><strong>个人博客：<a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a></strong></li></ul><p>##二、搭建所需</p><ul><li>注册一个gitHub账号</li><li>安装<a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew</a><br>使用它可以安装Mac没有预装但你会需要的东西      </li><li>下载安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></li><li>npm<br>第三步中我们安装的node.js中已经包含了npm</li><li>检验node和npm是否安装成功<br>  进入到终端输入指令：<code>node -v</code>    <code>npm -v</code></li></ul><p>##三、安装搭建Hexo</p><p>###安装</p><ul><li><p>官方给出了非常详细的安装和使用文档，我们可以参考安装和使用：    <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a><br><code>还需要安装git，文档中有安装方法</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure><p><code>如果不可以的话就在最前面加上sudo</code></p></li><li>安装完一定要记得去终端检验是否安装成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure></li></ul><p>###建站        </p><ul><li><p>在终端切换（cd）一个你想指定的目录下，执行下面这个命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure></li><li><p>在这个目录下会出现你刚刚创建的blog文件夹，切换到（cd）blog文件夹执行以下命令来安装npm</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install   </div><div class="line">```    </div><div class="line">* 执行以下命令来开启服务器</div></pre></td></tr></table></figure></li></ul><p>hexo server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">* 开启后访问</div><div class="line">http://localhost:4000/</div><div class="line"></div><div class="line">##四、与GitHub相关联，相当于托管到GitHub上</div><div class="line"></div><div class="line">* 创建一个新的仓库</div><div class="line">* 给仓库命名，Lazy可以替换成任意的，后面为固定写法3.进入到这个仓库，复制这个链接</div><div class="line">* 打开blog文件夹，进入到_config.yml文件夹下，可以用sublime打开或者其他工具</div><div class="line">* 更改添加以下内容（注意此处要在冒号的后面加上空格）</div><div class="line">* 在blog目录下执行命令  </div><div class="line">``` </div><div class="line">//生成静文件</div><div class="line">hexo generate    </div><div class="line">//部署网站</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p><ul><li>访问这个链接看到自己博客的界面就表示成功啦！    <a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a>    （记得要换成自己对应的名字）</li></ul><p>##五、常用命令（更多的命令可以去Hexo官网翻阅文档，很详细）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"> //清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</div><div class="line">hexo clean    </div><div class="line">//生成静态文件</div><div class="line">hexo generate</div><div class="line">//部署网站</div><div class="line">hexo deploy</div><div class="line">//新建文章</div><div class="line">hexo new &quot;文章名&quot;  </div><div class="line">//查看帮助</div><div class="line">hexo help </div><div class="line">//查看Hexo的版本</div><div class="line">hexo version</div></pre></td></tr></table></figure></p><p>##六、主题更换</p><ul><li>参考链接：<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a> </li><li>其实就是拿到你喜欢主题的链接，然后到blog目录下执行命令 git clone 链接</li><li>下载成功的主题拖到themes文件夹里</li><li>来到_config.yml中更改想用主题的名字（在themes中选择填写）</li><li>改完后别忘了从新部署，以下三个命令： <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean   </div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></li></ul>]]></content>
+    <title>hello</title>
+    <link href="http://yoursite.com/2017/12/05/hello/"/>
+    <id>http://yoursite.com/2017/12/05/hello/</id>
+    <published>2017-12-05T09:25:45.000Z</published>
+    <updated>2017-12-05T09:25:45.909Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;p&gt;#使用GitHub + Hexo来搭建个人博客(for Mac)&lt;/p&gt;
-&lt;p&gt;##一、了解下GitHub和Hexo&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;gitHub是一个面向开源及私有软件项目的托管平台（男性最大交友平台 ^-^）&lt;br&gt;&lt;a href=&quot;https://githu
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/10/25/hello-world/"/>
-    <id>http://yoursite.com/2017/10/25/hello-world/</id>
-    <published>2017-10-25T04:51:00.000Z</published>
-    <updated>2017-10-25T04:51:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
     
     </summary>
     

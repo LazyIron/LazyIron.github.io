@@ -17,9 +17,9 @@
       <content type="html"><![CDATA[<p>#使用GitHub + Hexo来搭建个人博客(for Mac)</p>
 <p>##一、了解下GitHub和Hexo</p>
 <ul>
-<li><p><a href="https://github.com/" target="_blank" rel="external">gitHub</a>是一个面向开源及私有软件项目的托管平台（男性最大交友平台 ^-^）<br><img src="file:///var/folders/bc/_61pg22d5_78fvdtyfzzbll80000gn/T/WizNote/afa53663-d0b5-4bba-9578-e12b20891fe6/index_files/5feb7bfc-a150-4726-9943-117cf0fc919f.jpg" alt="gitHUb"></p>
+<li><p><a href="https://github.com/" target="_blank" rel="external">gitHub</a>是一个面向开源及私有软件项目的托管平台（男性最大交友平台 ^-^）<br><img src="/images/github.png" alt="gitHUb"></p>
 </li>
-<li><p><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="external">Hexo</a>是快速，简单且高效的博客框架<br><img src="file:///var/folders/bc/_61pg22d5_78fvdtyfzzbll80000gn/T/WizNote/afa53663-d0b5-4bba-9578-e12b20891fe6/index_files/7e03ba73-cac2-4c79-9bb0-6da70e53d7fb.jpg" alt="Hexo"></p>
+<li><p><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="external">Hexo</a>是快速，简单且高效的博客框架<br><img src="/images/hexo.png" alt="Hexo"></p>
 </li>
 </ul>
 <p> <strong>个人博客：<a href="https://lazyiron.github.io/" target="_blank" rel="external">https://lazyiron.github.io/</a></strong></p>
